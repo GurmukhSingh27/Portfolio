@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmukh Singh Dadiala</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d511d5aee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'am <span>Gurmukh</span><br>Singh Dadiala<br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A dedicated full stack web developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js). Currently pursuing my BTech in Computer Science Engineering at Lovely Professional University. Proficient in JavaScript, HTML, CSS, and Git, I've developed and deployed various web applications with a keen interest in UI and UX design, incorporating user-friendly interfaces. Passionate about problem-solving and staying updated with industry trends through online courses and hackathons. Seeking internship or entry-level opportunities to apply my skills and grow professionally. Let's connect here!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI/UX Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>UI/UX</li>
+                            <li><span>2017 - 2019</span><br>xyz</li>
+                            <li><span>2016 - 2017</span><br>xyz</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (Computer Science & Engineering) &emsp; (2022 - Current)</span><br>Lovely Professional University</li>
+                            <li><span>Intermediate &emsp; (2022)</span><br>Stella Maris Inter College</li>
+                            <li><span>High School &emsp; (2020)</span><br>Stella Maris Inter College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>With a strong background in both front-end and back-end development, I create dynamic, responsive web applications that prioritize user experience and performance. I excel in translating design mockups into functional, interactive interfaces, managing databases efficiently, and ensuring seamless integration between client-side and server-side components. My expertise in web design principles and modern development tools enables me to deliver high-quality, scalable solutions that meet diverse client needs and drive business growth.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am a beginner in UI/UX design with a passion for creating intuitive and engaging user experiences. I specialize in designing user interfaces that are visually appealing and easy to navigate. With a foundation in design principles, I focus on user-centered design to ensure that my work meets the needs and expectations of users. I am eager to apply my skills in wireframing, prototyping, and usability testing to contribute to innovative projects and continually grow in the field of UI/UX design</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>MyWeather</h3>
+                        <p>A Weather App made using React & Vite. Displays current weather, humidity and wind speed of the entered location. Uses API for updating the weather.</p>
+                        <a href="https://weather-app-6fh3.onrender.com/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>HealthEase</h3>
+                        <p>It asks user to give the details of illness like symptoms, and accordingly give relevant remedies, lines of treatment to be followed along with lab tests required for going ahead with the treatment. It uses HTML, CSS and Javascript for the front-end development and Node.js along with Express to handle the backend. MongoDB is used to store the data into the database.</p>
+                        <a href="https://github.com/GurmukhSingh27/HealthEase">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>MyToDo</h3>
+                        <p>A To Do List App made using React.js. You can add, delete and edit your daily tasks.</p>
+                        <a href="https://todolist-app-55st.onrender.com/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/GurmukhSingh27" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> busygurmukh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 8840422525</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gurmukhsinghdadiala27/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GurmukhSingh27"><i class="fa-brands fa-square-github"></i></i></a>
+                        <a href="https://stackoverflow.com/users/25435565/gurmukh-singh-dadiala"><i class="fa-brands fa-stack-overflow"></i></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 
+                <i class="fa-solid fa-at"></i>
+                Gurmukh Singh Dadiala 
+                <i class="fa-solid fa-khanda"></i>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-180px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxlc9h4j5MbRpsECtzYvEfw40gYmLxIS3IA1GQOw-bSI3UqHdJGt9Vwerrnsjj9UAp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
